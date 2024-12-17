@@ -1,29 +1,47 @@
-# Create T3 App
+# HR Management System - solution
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a solution to the [Tech Genius Test Project - HR Administration System to manage employee details]
 
-## What's next? How do I make an app with this?
+## Table of contents
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+- [How to run the App](#run-app)
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+## Overview
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+### The challenge
 
-## Learn More
+- Employees can only view and edit their own data, but cannot change their manager or status
+- Managers can view all employees in their departments, but cannot modify manager or status fields
+- HR Administrators can view and edit all employees and departments, including changing manager and status
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## My process
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+### Built with
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- t3 stack (npm create t3-app@latest)
+- Language: Typescript
+- Styling: Tailwind CSS / Material UI/ shadcn
+- Database: sqlite
+- ORM: prisma
+- Framework: next.js
+- Authentication: NextAuth.js
+- Client-Server API: tRPC
+- Form validation: Zod
+- React-hook-form with Zod resolver/validation
 
-## How do I deploy this?
+### What I learned
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+I've learned a lot, including using TypeScript and Prisma for database management. Most importantly, I had fun and found it challenging to build middleware with Next.js
+
+### How to run the App
+- Clone the App
+- Navigate to root directory
+- Run command "npm install"
+- After that start the server by command "npm run dev"
+- Development server should be running and you can visit your app at http://localhost:3000
